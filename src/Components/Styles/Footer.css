@@ -1,0 +1,85 @@
+.Footer {
+
+    height: 300px;
+    max-height: 350px;
+    background-color: #282c34;
+    align-content: center;
+    display: flex;
+  
+  }
+
+  
+  .Footer-logo-section {
+  
+    position: relative;
+    margin-left: 40px;
+    max-height: 200px;
+    top: 18%;
+  }
+
+  .FooterContact {
+  
+    position: relative;
+    margin-left: 200px;
+    max-height: 200px;
+    top: 25%;
+  }
+
+  .FooterContact p {
+    position: relative;
+    color:white;
+    text-align: start;
+    font-size: 14px;
+  }
+
+  .FooterLinks {
+  
+    position: relative;
+    margin-left: 250px;
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    top: 25%;
+  }
+
+  .Footer h2 {
+
+    font-size: 18px;
+    color:  #0776be;
+  }
+
+  .FooterLinks .FooterLink {
+    text-align: start;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+  }
+
+  .FooterLinks .FooterLink:hover {
+    color: #0a4872;
+  }
+
+  .Footer-logo-section p {
+  
+    color: white;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .Footer {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      max-height: none;
+    }
+
+    .FooterLinks, .Footer-logo-section, .FooterContact {
+      position: relative;
+      top: 0%;
+      margin: auto;
+      margin-top: 30px;
+      margin-bottom: 30px
+    }
+ 
+   }

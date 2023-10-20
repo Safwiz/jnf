@@ -1,0 +1,141 @@
+.Cards {
+
+    height: auto;
+    padding: 20px;
+    display: flex;
+    background-color: #ffff;
+  }
+  
+  .CardItem {
+  
+    width:500px;
+    text-wrap: wrap;
+    text-align:justify;
+    max-height: none;
+    display: flex;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 30px;
+  }
+  
+  .CardContent {
+  
+    padding:10px;
+    cursor:default;
+  }
+  
+  .CardTitle {
+    display:inline-block;
+    color:#0a4872;
+    font-size: 24px;
+  }
+  
+  .CardTitle:after {
+  
+    display:block;
+    content: '';
+    border-bottom: solid 2px #0a4872;  
+    transform: scaleX(0);  
+    transition: transform 800ms ease-in-out;
+  
+  }
+  
+  .CardItem:hover .CardTitle:after{
+    transform: scaleX(1);
+   }
+  
+   .CardItem:hover .CardImage{
+    transform: translateY(-40px);
+   }
+  
+   .CardImage {
+  
+    position: relative;
+    top:40px;
+    transition: transform 0.5s ease;
+    margin-right: 20px;
+    z-index: 999;
+   }
+  
+   .CardText {
+  
+    font-size: 12.5px;
+   }
+
+  @media screen and (min-width: 570px) and (max-width: 768px) {
+
+    .Cards {
+
+      display: block;
+      height: auto;
+      max-height: none;
+    }
+
+    .CardItem {
+      margin: auto;
+      max-height: none;
+    }
+  }
+
+  @media screen and (min-width: 571px) and (max-width: 768px) {
+
+    .Cards {
+      max-height: none;
+    }
+
+    .CardItem {
+      max-height: none;
+    }
+  }
+
+
+  @media screen and (min-width: 380px) and (max-width: 570px) {
+    .Cards {
+
+      display: block;
+      height: auto;
+    }
+
+    .CardItem {
+      margin: auto;
+      margin-bottom: 80px;
+      width: 400px;
+      display: block;
+    }
+
+    .CardImage {
+
+      top: 0px;
+    }
+
+    .CardItem:hover .CardImage{
+      transform: translateY(-10px);
+     }
+
+  }
+
+  @media screen and (max-width: 380px) {
+
+    .Cards {
+
+      display: block;
+      height: auto;
+    }
+
+    .CardItem {
+      margin: auto;
+      margin-bottom: 80px;
+      width: 300px;
+      display: block;
+    }
+
+    .CardImage {
+
+      top: 0px;
+    }
+
+    .CardItem:hover .CardImage{
+      transform: translateY(-10px);
+     }
+
+  }

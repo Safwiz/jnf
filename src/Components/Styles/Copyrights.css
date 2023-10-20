@@ -1,0 +1,22 @@
+.Copyrights {
+
+    height: 40px;
+    max-height: 40px;
+    background-color: #0a4872;
+    justify-content: center;
+  }
+  
+  .CopyrightsText {
+  
+    color: white;
+    font-size: 13px;
+    position: relative; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+  }
+  
+  .CopyrightsText a {
+    text-decoration: none;
+  }
+  

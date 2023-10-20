@@ -1,0 +1,110 @@
+.Contact {
+
+    background-color: #fff;
+}
+
+.HQContact {
+
+    position: relative;
+    width: 1000px;
+    padding: 10px;
+    background-color: #fff;
+    margin:auto;
+    margin-top: 80px;
+    box-shadow: 0px 15px 23px -10px rgba(0,0,0,0.78);
+    -webkit-box-shadow: 0px 15px 23px -10px rgba(0,0,0,0.78);
+    -moz-box-shadow: 0px 15px 23px -10px rgba(0,0,0,0.78);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.HQContact iframe {
+    justify-self: flex-end;
+}
+
+.HQText {
+
+    position: relative;
+    margin-right: 100px;
+    top: 60px;
+}
+
+.HQText h2{
+
+    color: #00a4d6;
+}
+
+.HQText p {
+
+    text-align: start;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 20px;
+    line-height: 30px;
+    width: 100%;
+}
+
+#HQSididaoud {
+
+    filter: invert(23%) sepia(75%) saturate(1654%) hue-rotate(195deg) brightness(96%) contrast(101%);
+}
+
+#HQCV {
+
+    filter: invert(8%) sepia(94%) saturate(5851%) hue-rotate(345deg) brightness(94%) contrast(96%);
+}
+
+#HQRades {
+
+    filter: invert(88%) sepia(67%) saturate(2019%) hue-rotate(358deg) brightness(103%) contrast(103%);
+}
+
+#HQPhone, #HQMail {
+
+    filter: invert(51%) sepia(59%) saturate(2286%) hue-rotate(158deg) brightness(91%) contrast(101%);
+}
+
+@media screen and (max-width: 768px) {
+
+    .HQContact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 640px;
+    }
+
+    .HQText {
+        top: 0%;
+    }
+
+    .HQText h2{
+        text-align: start;
+        margin-left: 20px;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+
+    .HQContact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 370px;
+    }
+
+    .HQText {
+        top: 0%;
+    }
+
+    .HQText h2{
+        text-align: start;
+        margin-left: 20px;
+    }
+
+    .HQContact iframe {
+        width: 350px;
+    }
+
+}
